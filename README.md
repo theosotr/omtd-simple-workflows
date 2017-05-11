@@ -35,6 +35,7 @@ sudo docker exec -i -t omtd-simple-workflows  /bin/bash
 
 ## Examples ##
 
+Inside the container try the following examples. 
 
 **Example 1**:
 
@@ -47,4 +48,5 @@ sudo docker exec -i -t omtd-simple-workflows  /bin/bash
 ```
 
 All scripts are available at `omtd-simple-workflows/scripts` directory.
+The same examples can run and in the host machine.
  
