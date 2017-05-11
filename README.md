@@ -1,4 +1,9 @@
-# omtd-simple-workflows
+# OMTD-SIMPLE-WORKFLOWS #
+
+Provides scripts and code for executing workflows within a docker container. 
+
+## Installation ##
+
 
    
 **Step 1**: Clone omtd-simple-workflows by typing
@@ -14,13 +19,13 @@ git clone <repoURL>
 mvn clean install 
 ```
 
-**Step 3**: Create docker image
+**Step 3**: Create a docker image (named `omtd-simple-workflows-docker`) that contains everything that is needed.
 
 ```
 ./omtd-simple-workflows-createDockerImg.sh 
 ```
 
-**Step 4**: Use the following commands to  a) create a container from the image produced by the previous step b) start a container c) get a bash shell inside the container.
+**Step 4**: Use the following commands to  a) create a container from the image produced by the previous step b) start the container c) get a bash shell inside the container.
 
 ```
 sudo docker create --name omtd-simple-workflows -t omtd-simple-workflows-docker
@@ -28,13 +33,20 @@ sudo docker start omtd-simple-workflows
 sudo docker exec -i -t omtd-simple-workflows  /bin/bash
 ```
 
-**Step 5**: Examples
+## Examples ##
+
+Inside the container try the following examples. 
+
+**Example 1**:
 
 ```
-# Example 1: 
-# PDF2XMI with DKPRo PdfReader.
+# PDF2XMI example with DKPRo PdfReader. Reads a folder (../testInput) with PDFs and creates an output folder (../testOutput) 
+# with the respective XMIs that were produced.
 ./Linux_runDKPro_PDF2XMI_example.sh
 # Check that the produced output is correct.
-/checkDiff.sh ../testOutput/ ../testOutputPDFToXMIRef/
- 
+./checkDiff.sh ../testOutput/ ../testOutputPDFToXMIRef/
 ```
+
+All scripts are available at `omtd-simple-workflows/scripts` directory.
+The same examples can run and in the host machine.
+ 
