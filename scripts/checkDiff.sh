@@ -7,9 +7,9 @@ NUMOFFILESWITHDIFFS=0
 
 for f in $FILESIN
 do
-  echo "Comparing $f file...with the respective one from $2"
+  echo "Comparing $f file..."
   filename=$(basename "$f")
-  diff -q $f $2$filename
+  diff -q $f $FILESOT$filename
   #diff -q $f $f
   result=$?
   
