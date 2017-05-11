@@ -1,1 +1,1 @@
-runDKPro_PDF2XMI.bat ../testInput/ ../testOutput/
+Winds_runDKPro_PDF2XMI.bat ../testInput/ ../testOutput/
