@@ -1,0 +1,1 @@
+runDKPro_PDF2XMI.sh ../testInput/ ../testOutput/
