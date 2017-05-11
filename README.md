@@ -19,13 +19,13 @@ git clone <repoURL>
 mvn clean install 
 ```
 
-**Step 3**: Create docker image
+**Step 3**: Create a docker image (named `omtd-simple-workflows-docker`) that contains everything that is needed.
 
 ```
 ./omtd-simple-workflows-createDockerImg.sh 
 ```
 
-**Step 4**: Use the following commands to  a) create a container from the image produced by the previous step b) start a container c) get a bash shell inside the container.
+**Step 4**: Use the following commands to  a) create a container from the image produced by the previous step b) start the container c) get a bash shell inside the container.
 
 ```
 sudo docker create --name omtd-simple-workflows -t omtd-simple-workflows-docker
