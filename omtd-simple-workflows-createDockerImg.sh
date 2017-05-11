@@ -1,7 +1,7 @@
 #!/bin/bash
 
-Dockerfile="./omtd-store.dockerfile"
-DockerImg="omtd-store-docker"
+Dockerfile="./omtd-simple-workflows.dockerfile"
+DockerImg="omtd-simple-workflows-docker"
 
 docker build -f $Dockerfile -t $DockerImg .
 
