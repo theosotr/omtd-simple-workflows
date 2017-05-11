@@ -18,5 +18,5 @@ WORKDIR /opt/omtd-simple-workflows/scripts/
 
 # -- -- --- - -- -- -- --- - -- 
 # omtdstore is installed. Start it!
-ENTRYPOINT service omtdstore start && /bin/bash
+#ENTRYPOINT service omtdstore start && /bin/bash
 
