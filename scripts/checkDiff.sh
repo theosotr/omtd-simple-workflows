@@ -16,6 +16,7 @@ do
   if [ $result -eq 1 ] 
   then
   	NUMOFFILESWITHDIFFS=$((NUMOFFILESWITHDIFFS + 1))
+	#cmp -b $f $FILESOT$filename
   fi	
 done
 
