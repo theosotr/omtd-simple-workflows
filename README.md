@@ -43,7 +43,7 @@ sudo docker exec -i -t omtd-simple-workflows  /bin/bash
 # with the respective XMIs that were produced.
 ./Linux_runDKPro_PDF2XMI_example.sh
 # Check that the produced output is correct.
-/checkDiff.sh ../testOutput/ ../testOutputPDFToXMIRef/
+./checkDiff.sh ../testOutput/ ../testOutputPDFToXMIRef/
 ```
 
 All scripts are available at `omtd-simple-workflows/scripts` directory.
