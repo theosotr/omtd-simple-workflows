@@ -31,6 +31,10 @@ sudo docker exec -i -t omtd-simple-workflows  /bin/bash
 **Step 5**: Examples
 
 ```
+# Example 1: 
 # PDF2XMI with DKPRo PdfReader.
-./Linux_runDKPro_PDF2XMI_example.sh 
+./Linux_runDKPro_PDF2XMI_example.sh
+# Check that the produced output is correct.
+/checkDiff.sh ../testOutput/ ../testOutputPDFToXMIRef/
+ 
 ```
