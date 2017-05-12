@@ -35,7 +35,7 @@ sudo docker exec -i -t omtd-simple-workflows  /bin/bash
 
 ## Examples ##
 
-Inside the container try the following examples. 
+Inside the container try the following examples. The same examples can run and in the host machine. 
 
 **Example 1**:
 
@@ -47,6 +47,6 @@ Inside the container try the following examples.
 ./checkDiff.sh ../testOutput/ ../testOutputPDFToXMIRef/
 ```
 
-All scripts are available at `omtd-simple-workflows/scripts` directory.
-The same examples can run and in the host machine.
+NOTES: All scripts are available at `omtd-simple-workflows/scripts` directory.
+
  
