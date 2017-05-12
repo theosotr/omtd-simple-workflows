@@ -12,6 +12,9 @@ RUN (echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 ENV PATH $JAVA_HOME/bin:$PATH
 
+# Install xmlstarlet
+RUN apt-get -y install xmlstarlet
+
 # Install omtd-simple-workflows. 
 # -- -- --- - -- -- -- --- - -- 
 # Create target dir.
