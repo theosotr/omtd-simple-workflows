@@ -21,7 +21,7 @@ RUN apt-get -y install xmlstarlet
 RUN mkdir /opt/omtd-simple-workflows/
 # Copy everything to target dir.
 COPY . /opt/omtd-simple-workflows/
-# Set working dir and prepare installation. 
+# Set working dir. 
 WORKDIR /opt/omtd-simple-workflows/scripts/
 
 # -- -- --- - -- -- -- --- - -- 
