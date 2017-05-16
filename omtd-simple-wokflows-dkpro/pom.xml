@@ -19,7 +19,7 @@
 		<uima.version>2.9.0</uima.version>
 		<uimafit.version>2.2.0</uimafit.version>
 		
-		<start-class>eu.openminted.simplewokflows.dkpro.PipelinePDFToXMI</start-class>
+		<start-class>eu.openminted.simplewokflows.dkpro.PipelinePDFToXMIRunner</start-class>
 	</properties>
 
 
