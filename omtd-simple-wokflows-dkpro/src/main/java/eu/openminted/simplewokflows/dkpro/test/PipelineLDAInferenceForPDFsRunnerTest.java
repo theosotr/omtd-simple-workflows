@@ -1,8 +1,9 @@
-package eu.openminted.simplewokflows.dkpro;
+package eu.openminted.simplewokflows.dkpro.test;
 
 import org.slf4j.LoggerFactory;
 
 import ch.qos.logback.classic.Level;
+import eu.openminted.simplewokflows.dkpro.PipelineLDAInferenceForPDFs;
 
 /**
  * @author galanisd
@@ -20,6 +21,6 @@ public class PipelineLDAInferenceForPDFsRunnerTest{
     	String model = "C:/Users/galanisd/Desktop/Data/CORE/_COREMalletScripts/20160408_115129model.txt";
     	
     	String [] myargs = {input, model, output};
-    	PipelineLDAInferenceForPDFs.main(myargs);
+    	PipelineLDAInferenceForPDFs.LDAInferenceForPDFs(myargs);
     }
 }

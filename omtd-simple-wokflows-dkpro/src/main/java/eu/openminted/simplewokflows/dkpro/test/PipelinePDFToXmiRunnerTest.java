@@ -1,4 +1,6 @@
-package eu.openminted.simplewokflows.dkpro;
+package eu.openminted.simplewokflows.dkpro.test;
+
+import eu.openminted.simplewokflows.dkpro.PipelineCommandLineRunner;
 
 public class PipelinePDFToXmiRunnerTest {
 
@@ -9,6 +11,6 @@ public class PipelinePDFToXmiRunnerTest {
 		String myargs[] = { inputFolder, outputFolder };
 		//String[] myargs = args;
 
-		PipelinePDFToXMIRunner.main(myargs);
+		PipelineCommandLineRunner.main(myargs);
 	}
 }

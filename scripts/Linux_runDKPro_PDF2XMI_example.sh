@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./Linux_runDKPro_PDF2XMI.sh ../testInput/ ../testOutput/
+./Linux_runDKPro.sh eu.openminted.simplewokflows.dkpro.PipelinePDFToXMI ../testInput/ ../testOutput/
 echo "DONE"
