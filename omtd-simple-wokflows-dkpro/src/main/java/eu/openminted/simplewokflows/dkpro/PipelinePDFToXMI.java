@@ -12,7 +12,12 @@ import org.apache.uima.fit.pipeline.SimplePipeline;
 import de.tudarmstadt.ukp.dkpro.core.io.pdf.PdfReader;
 import de.tudarmstadt.ukp.dkpro.core.io.xmi.XmiWriter;
 
+/**
+ * @author galanisd
+ *
+ */
 public class PipelinePDFToXMI {
+	
 	// == === ==
 	public static void PDFToXMIPipeline(String args[]) throws Exception {
 		if (args.length == 2 && !args[0].isEmpty() && !args[1].isEmpty()) {

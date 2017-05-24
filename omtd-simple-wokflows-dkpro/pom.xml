@@ -18,31 +18,33 @@
 		<dkpro.core.version>1.9.0-SNAPSHOT</dkpro.core.version>
 		<uima.version>2.9.0</uima.version>
 		<uimafit.version>2.2.0</uimafit.version>
-		
+
+
 		<start-class>eu.openminted.simplewokflows.dkpro.PipelinePDFToXMIRunner</start-class>
+
 	</properties>
 
 
-  	<parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.2.RELEASE</version>        
-    </parent>
-    
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.4.2.RELEASE</version>
+	</parent>
+
 	<dependencies>
 
 		<!-- Spring Boot -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        
-        <!-- Dkpro -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Dkpro -->
 		<dependency>
 			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
 			<artifactId>de.tudarmstadt.ukp.dkpro.core.io.text-asl</artifactId>
@@ -61,6 +63,43 @@
 			<version>1.8.0</version>
 		</dependency>
 
+		<!--  -->
+	<dependency>
+		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+		<artifactId>de.tudarmstadt.ukp.dkpro.core.mallet-asl</artifactId>
+		<version>1.8.0</version>
+	</dependency>
+	<dependency>
+		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+		<artifactId>de.tudarmstadt.ukp.dkpro.core.opennlp-asl</artifactId>
+		<version>1.8.0</version>
+	</dependency>
+	<dependency>
+		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+		<artifactId>de.tudarmstadt.ukp.dkpro.core.stopwordremover-asl</artifactId>
+		<version>1.8.0</version>
+	</dependency>
+	<dependency>
+		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+		<artifactId>de.tudarmstadt.ukp.dkpro.core.testing-asl</artifactId>
+		<version>1.8.0</version>
+		<scope>test</scope>
+	</dependency>
+	
+	<dependency>
+		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+		<artifactId>de.tudarmstadt.ukp.dkpro.core.io.text-asl</artifactId>
+		<version>1.8.0</version>
+	</dependency>		
+		
+		<dependency>
+			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+			<artifactId>de.tudarmstadt.ukp.dkpro.core.testing-asl</artifactId>
+			<version>1.8.0</version>
+			<scope>test</scope>
+		</dependency>
+
+
 		<!-- <dependency> <groupId>de.tudarmstadt.ukp.dkpro.core</groupId> <artifactId>de.tudarmstadt.ukp.dkpro.core</artifactId> 
 			<version>1.8.0</version> </dependency> -->
 
@@ -75,50 +114,23 @@
 
 	<build>
 		<plugins>
-			<!-- 
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4.1</version>
-				<configuration>					
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-					
-					<archive>
-						<manifest>
-							<mainClass>eu.openminted.simplewokflows.dkpro.PipelinePDFToXMI</mainClass>
-						</manifest>
-					</archive>
-
-				</configuration>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>make-assembly</id>						
-						<phase>package</phase>
 						<goals>
-							<goal>single</goal>
+							<goal>repackage</goal>
 						</goals>
+						<configuration>
+							<classifier>exec</classifier>
+							<mainClass>${start-class}</mainClass>
+							<layout>ZIP</layout>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-			 -->
-			 
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-				    <execution>
-				      <goals>
-				        <goal>repackage</goal>
-				      </goals>
-				      <configuration>
-				        <classifier>exec</classifier>
-				      </configuration>
-				    </execution>
-				  </executions>
-            </plugin>			
 		</plugins>
 	</build>
-	
+
 </project>
