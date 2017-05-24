@@ -34,7 +34,7 @@ public class PipelineCommandLineRunner implements CommandLineRunner {
 		
 		// copy args
 		String myArgs[] = Arrays.copyOfRange(args, 1, args.length);
-		log.info("===>" + Arrays.toString(myArgs));
+		log.info("arguments ===>" + Arrays.toString(myArgs));
 		
 		// select workflow 
 		if(args[0].equals(PipelinePDFToXMI.class.getName())){
