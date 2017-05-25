@@ -41,6 +41,8 @@ public class PipelineCommandLineRunner implements CommandLineRunner {
 			PipelinePDFToXMI.PDFToXMIPipeline(myArgs);
 		}else if(args[0].equals(PipelineLDAInferenceForPDFs.class.getName())){
 			PipelineLDAInferenceForPDFs.LDAInferenceForPDFs(myArgs);
+		}else if(args[0].equals(PipelineNERInferenceForPDFs.class.getName())){
+			PipelineNERInferenceForPDFs.NERInferenceForPDFs(myArgs);
 		}
 	}
 }
