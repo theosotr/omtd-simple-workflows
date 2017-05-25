@@ -18,9 +18,8 @@
 		<dkpro.core.version>1.9.0-SNAPSHOT</dkpro.core.version>
 		<uima.version>2.9.0</uima.version>
 		<uimafit.version>2.2.0</uimafit.version>
-
-
-		<start-class>eu.openminted.simplewokflows.dkpro.PipelinePDFToXMIRunner</start-class>
+		
+		<start-class>eu.openminted.simplewokflows.dkpro.PipelineCommandLineRunner</start-class>		
 
 	</properties>
 
@@ -159,8 +158,10 @@
 						</goals>
 						<configuration>
 							<classifier>exec</classifier>
+							<!--
 							<mainClass>${start-class}</mainClass>
 							<layout>ZIP</layout>
+							-->
 						</configuration>
 					</execution>
 				</executions>

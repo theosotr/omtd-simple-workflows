@@ -38,7 +38,7 @@ public class PipelineLDAInferenceForPDFs{
     private static final String LANGUAGE = "en";
     private static final URL STOPWORD_FILE = PipelineLDAInferenceForPDFs.class.getClassLoader().getResource("stopwords_en.txt");
     
-    public static void main(String[] args) throws IOException, UIMAException{
+    public static void LDAInferenceForPDFs(String[] args) throws IOException, UIMAException{
         String inputDir = args[0];
         String modelFile = args[1];
         String outDir = args[2];

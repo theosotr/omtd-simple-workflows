@@ -1,1 +1,1 @@
-Winds_runDKPro_PDF2XMI.bat ../testInput/ ../testOutput/
+Winds_runDKPro.bat eu.openminted.simplewokflows.dkpro.PipelinePDFToXMI ../testInput/ ../testOutput/
