@@ -40,13 +40,13 @@ Inside the container try the following examples. The same examples can run and i
 **Example 1**:
 
 ```
-# PDF2XMI example with DKPRo PdfReader. Reads a folder (../testInput) with PDFs and creates an output folder (../testOutput) 
+# PDF2XMI example with DKPRo PdfReader. Reads a folder (i.e. `~/input_dataset`) with PDFs and creates an output folder (i.e. `~/output_dataset`) 
 # with the respective XMIs that were produced.
-./Linux_runDKPro_PDF2XMI_example.sh
+Linux_runDKPro_PDF2XMI_example.sh
 # Check that the produced output is correct.
-./checkDiff.sh ../testOutput/ ../testOutputPDFToXMIRef/
+checkDiff.sh ~/output_dataset ~/test_dataset
 ```
 
-NOTES: All scripts are available at `omtd-simple-workflows/scripts` directory.
+NOTES: All scripts are available at `/usr/bin` directory.
 
  
