@@ -1,0 +1,19 @@
+<tool id="checkdiff" name="DKPro_PDF2XMI test case" version="0.1">
+    <description>A simple test case for the DKPro_PDF2XMI tool</description>
+    <requirements>
+        <container type="docker">omtd-simple-workflows-docker</container>
+    </requirements>
+    <command>
+        mkdir tmp;
+        #for $file in $xml_files
+            cp $file tmp/$file.element_identifier;
+        #end for
+        checkDiff.sh tmp/ /root/test_dataset/ > $output
+    </command>
+    <inputs>
+        <param type="data" name="xml_files" label="Input XML files" format="xml" multiple="true" />
+    </inputs>
+    <outputs>
+        <data format="text" name="output" />
+    </outputs>
+</tool>

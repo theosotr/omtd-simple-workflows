@@ -1,0 +1,22 @@
+<tool id="DKPro_PDF2XMI" name="PDF2XMI" version="0.1">
+    <description>PDF2XMI example with DKPRo PdfReader</description>
+    <requirements>
+        <container type="docker">omtd-simple-workflows-docker</container>
+    </requirements>
+    <command>
+        mkdir tmp;
+        #for $file in $pdf_files
+            cp $file tmp/$file.element_identifier;
+        #end for
+        Linux_runDKPro.sh $id tmp $output.job_working_directory/working/out/
+    </command>
+    <inputs>
+        <param name="id" type="text" label="Workflow ID"/>
+        <param type="data" name="pdf_files" label="Input PDF files" format="pdf" multiple="true" />
+    </inputs>
+    <outputs>
+        <collection name="output" type="list" label="Produce XML files">
+            <discover_datasets pattern="__designation__" directory="out" format="xml" visible="false" />
+        </collection>
+    </outputs>
+</tool>
