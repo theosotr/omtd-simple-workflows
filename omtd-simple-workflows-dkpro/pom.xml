@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>eu.openminted</groupId>
-	<artifactId>omtd-simple-wokflows-dkpro</artifactId>
+	<artifactId>omtd-simple-workflows-dkpro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>omtd-simple-wokflows-dkpro</name>
+	<name>omtd-simple-workflows-dkpro</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

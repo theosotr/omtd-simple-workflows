@@ -17,7 +17,7 @@
 	</properties>
 
 	<modules>
-		<module>./omtd-simple-wokflows-dkpro</module>	
+		<module>./omtd-simple-workflows-dkpro</module>	
 	</modules>
   
 </project>

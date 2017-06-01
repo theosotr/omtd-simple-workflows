@@ -43,6 +43,8 @@ public class PipelineCommandLineRunner implements CommandLineRunner {
 			PipelineLDAInferenceForPDFs.LDAInferenceForPDFs(myArgs);
 		}else if(args[0].equals(PipelineNERInferenceForPDFs.class.getName())){
 			PipelineNERInferenceForPDFs.NERInferenceForPDFs(myArgs);
+		}else{
+			log.info("No valid workflow name/id!!");	
 		}
 	}
 }
