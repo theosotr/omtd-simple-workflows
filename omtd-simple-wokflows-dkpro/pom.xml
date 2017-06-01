@@ -30,14 +30,14 @@
 		<version>1.4.2.RELEASE</version>
 	</parent>
 	
-	<repositories>
+<!-- 	<repositories>
 		<repository>
 		    <id>openminted.releases</id>
 		    <name>OpenMinTeD Project Release Repository</name>
 		    <url>https://repo.openminted.eu/content/repositories/releases</url>
 		</repository>
 	</repositories>
-	
+	-->
 
 	<dependencies>
 
@@ -118,18 +118,18 @@
 			<scope>test</scope>
 		</dependency>
 
-<!--  
+<!-- 
 	    <dependency>
 	        <groupId>eu.openminted.uc-tdm-socialsciences</groupId>
 	        <artifactId>eu.openminted.uc-tdm-socialsciences</artifactId>
 	        <version>1.0.0</version>
 	        <type>pom</type>
     	</dependency>
- -->
-    	<dependency>
+-->    	
+     	<dependency>
     		<groupId>eu.openminted.uc-tdm-socialsciences</groupId>
     		<artifactId>ss-io-pdfx-xml</artifactId>
-    		<version>1.0.0</version>
+    		<version>1.0.1-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
@@ -141,9 +141,8 @@
 		<dependency>
     		<groupId>eu.openminted.uc-tdm-socialsciences</groupId>
     		<artifactId>ss-module-ner</artifactId>
-    		<version>1.0.0</version>
+    		<version>1.0.1-SNAPSHOT</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
