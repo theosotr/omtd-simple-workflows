@@ -18,7 +18,7 @@
 
 	<modules>
 		<module>./omtd-simple-workflows-dkpro</module>
-		<module>omtd-simple-workflows-uniman</module>
+		<module>./omtd-simple-workflows-uniman</module>
 	</modules>
   
 </project>
