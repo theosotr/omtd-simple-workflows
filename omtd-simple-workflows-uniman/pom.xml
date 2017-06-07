@@ -12,6 +12,9 @@
 		<dkpro.core.version>1.8.0</dkpro.core.version>
 		<spring.version>4.3.8.RELEASE</spring.version>
 		<start-class>eu.openminted.simpleworkflows.uniman.PipelineCommandLineRunner</start-class>	
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<dependencies>
