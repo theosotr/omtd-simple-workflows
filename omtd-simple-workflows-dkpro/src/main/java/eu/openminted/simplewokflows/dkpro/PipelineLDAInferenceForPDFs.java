@@ -71,16 +71,16 @@ public class PipelineLDAInferenceForPDFs{
         	
         	DocumentMetaData meta = DocumentMetaData.get(jcas);
         	
-            select(jcas, TopicDistribution.class).forEach(System.out::println);        	
+            //select(jcas, TopicDistribution.class).forEach(System.out::println);        	
             //select(jcas, TopicDistribution.class).forEach(System.out::println);
             
             AnnotationIndex<TopicDistribution> index = (AnnotationIndex<TopicDistribution>)jcas.getAnnotationIndex(TopicDistribution.class);            
             
-        	File f = new File(outDir + meta.getDocumentId());        	
-        	p = new PrintStream(new BufferedOutputStream(new FileOutputStream(f)));
-        	p.println(index.iterator().next().getTopicProportions().toString());
-            p.flush();
-            p.close();
+        	//File f = new File(outDir + meta.getDocumentId());        	
+        	//p = new PrintStream(new BufferedOutputStream(new FileOutputStream(f)));
+        	//p.println(index.iterator().next().getTopicProportions().toString());
+            //p.flush();
+            //p.close();
             
         }
     }
