@@ -2,4 +2,5 @@
 /testOutput
 /.classpath
 /.project
-
+*/target
+/models/*.txt
