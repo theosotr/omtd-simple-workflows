@@ -16,7 +16,7 @@ git clone <repoURL>
 **Step 2**: CD to omtd-simple-workflows directory that has been created. For building the projects type
 
 ```
-./installUNIMANProjects.sh
+./installProjectsDepedencies.sh
 mvn clean install 
 ```
 
@@ -61,6 +61,14 @@ Inside the container try the following examples. The same examples can run and i
 # Topic Inference with DKPro (Mallet LDA). Reads a folder (../testInput) with PDFs and creates an output folder (../testOutput3) 
 # with the respective XMIs that were produced
 ./Linux_runDKPro_PDFLDAInference_example.sh
+```
+
+**Example 4**:
+
+```
+# Named Entity Resolution with DKPro (Stanford NER mode) for Social Science and Humanities. Reads a folder (../testInput2) with PDFs and creates an output folder (../testOutput4) 
+# with the respective XMIs that were produced
+./Linux_runDKPro_PDFNERInference_example.sh
 ```
 
 NOTES: All scripts are available at `omtd-simple-workflows/scripts` directory.
