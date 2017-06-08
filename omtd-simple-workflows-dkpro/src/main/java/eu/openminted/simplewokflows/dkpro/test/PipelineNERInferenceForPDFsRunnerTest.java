@@ -22,8 +22,9 @@ public class PipelineNERInferenceForPDFsRunnerTest {
 	 	long startTime = System.currentTimeMillis();
 	 	
 	 	// Parameters
-	 	String input = "/home/gkirtzou/Dropbox/Work/Projects/OpenMinded/Data/2017.06_OMTD_Demo/Dataset2/fulltext/";
-	 	String output = "/home/gkirtzou/Dropbox/Work/Projects/OpenMinded/Data/2017.06_OMTD_Demo/WF3_Results/";
+	 	//String input = "/home/gkirtzou/Dropbox/Work/Projects/OpenMinded/Data/2017.06_OMTD_Demo/Dataset2/Dataset/fulltext/";
+	 	String input = "/home/gkirtzou/Dropbox/Work/Projects/OpenMinded/Sources/omtd-simple-workflows/testInput2";
+	 	String output = "/home/gkirtzou/Dropbox/Work/Projects/OpenMinded/Data/2017.06_OMTD_Demo/WF3_Results2/";
 	 	
 	 	// Running NER inference
 	 	String [] myargs = {input, output};
