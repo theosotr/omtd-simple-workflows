@@ -52,7 +52,7 @@ Inside the container try the following examples. The same examples can run and i
 ```
 # Chebi example from UNIMAN. Reads a folder (../testInput) with PDFs and creates an output folder (../testOutput2) 
 # with the respective XMIs that were produced
-./Linux_runDKPro_PDF2XMI_example.sh
+./Linux_runUNIMAN_Chebi_example.sh
 ```
 
 **Example 3**:
