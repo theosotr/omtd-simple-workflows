@@ -16,6 +16,7 @@ git clone <repoURL>
 **Step 2**: CD to omtd-simple-workflows directory that has been created. For building the projects type
 
 ```
+./installUNIMANProjects.sh
 mvn clean install 
 ```
 
@@ -45,6 +46,21 @@ Inside the container try the following examples. The same examples can run and i
 ./Linux_runDKPro_PDF2XMI_example.sh
 # Check that the produced output is correct.
 ./checkDiff.sh ../testOutput/ ../testOutputPDFToXMIRef/
+```
+**Example 2**:
+
+```
+# Chebi example from UNIMAN. Reads a folder (../testInput) with PDFs and creates an output folder (../testOutput2) 
+# with the respective XMIs that were produced
+./Linux_runDKPro_PDF2XMI_example.sh
+```
+
+**Example 3**:
+
+```
+# Topic Inference with DKPro (Mallet LDA). Reads a folder (../testInput) with PDFs and creates an output folder (../testOutput3) 
+# with the respective XMIs that were produced
+./Linux_runDKPro_PDFLDAInference_example.sh
 ```
 
 NOTES: All scripts are available at `omtd-simple-workflows/scripts` directory.

@@ -1,0 +1,1 @@
+./Linux_runDKPro.sh eu.openminted.simplewokflows.dkpro.PipelineLDAInferenceForPDFs ../testInput/ ../models/20160408_115129model.txt ../testOutput3/
