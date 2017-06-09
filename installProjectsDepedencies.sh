@@ -13,7 +13,7 @@ mvn clean install
 cd ..
 git clone https://github.com/gkirtzou/uc-tdm-socialsciences.git
 cd uc-tdm-socialsciences
-mvn clean install
+mvn clean install -Dmaven.test.skip=true
 
 cd ..
 cd omtd-simple-workflows
