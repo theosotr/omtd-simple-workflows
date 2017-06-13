@@ -50,7 +50,7 @@ Inside the container try the following examples. The same examples can run and i
 **Example 2**:
 
 ```
-# Chebi example from UNIMAN. Reads a folder (../testInput) with PDFs and creates an output folder (../testOutput2) 
+# Chebi example from UNIMAN. Reads a folder (../testInput3) with PDFs and creates an output folder (../testOutput2) 
 # with the respective XMIs that were produced
 ./Linux_runUNIMAN_Chebi_example.sh
 ```
