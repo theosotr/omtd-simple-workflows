@@ -1,11 +1,11 @@
-package eu.openminted.simplewokflows.dkpro.test;
+package eu.openminted.simpleworkflows.sshner.test;
 
 
 import java.util.concurrent.TimeUnit;
 
 import org.slf4j.LoggerFactory;
 import ch.qos.logback.classic.Level;
-import eu.openminted.simplewokflows.dkpro.PipelineNERInferenceForPDFs;
+import eu.openminted.simpleworkflows.sshner.PipelineNERInferenceForPDFs;
 
 /**
  * @author gkirtzou
@@ -23,8 +23,8 @@ public class PipelineNERInferenceForPDFsRunnerTest {
 	 	
 	 	// Parameters
 	 	//String input = "/home/gkirtzou/Dropbox/Work/Projects/OpenMinded/Data/2017.06_OMTD_Demo/Dataset2/Dataset/fulltext/";
-	 	String input = "/home/gkirtzou/Dropbox/Work/Projects/OpenMinded/Sources/omtd-simple-workflows/testInput2";
-	 	String output = "/home/gkirtzou/Dropbox/Work/Projects/OpenMinded/Data/2017.06_OMTD_Demo/WF3_Results2/";
+	 	String input = "C:/Users/galanisd/Desktop/Dimitris/EclipseWorkspaces/ILSPMars/omtd-simple-workflows/testInput2/";
+	 	String output = "C:/Users/galanisd/Desktop/Dimitris/EclipseWorkspaces/ILSPMars/omtd-simple-workflows/testOutput4/";
 	 	
 	 	// Running NER inference
 	 	String [] myargs = {input, output};

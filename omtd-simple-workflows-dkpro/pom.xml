@@ -126,11 +126,7 @@
 	        <type>pom</type>
     	</dependency>
 -->    	
-     	<dependency>
-    		<groupId>eu.openminted.uc-tdm-socialsciences</groupId>
-    		<artifactId>ss-io-pdfx-xml</artifactId>
-    		<version>1.0.1-SNAPSHOT</version>
-		</dependency>
+
 		
 		<dependency>
 			<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
@@ -138,11 +134,7 @@
 			<version>1.8.0</version>
 		</dependency>
 		
-		<dependency>
-    		<groupId>eu.openminted.uc-tdm-socialsciences</groupId>
-    		<artifactId>ss-module-ner</artifactId>
-    		<version>1.0.1-SNAPSHOT</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>

@@ -1,4 +1,4 @@
-package eu.openminted.simplewokflows.dkpro;
+package eu.openminted.simpleworkflows.sshner;
 
 import java.util.Arrays;
 
@@ -8,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import eu.openminted.simpleworkflows.sshner.PipelineNERInferenceForPDFs;
 
 /**
  * @author galanisd
@@ -38,10 +39,9 @@ public class PipelineCommandLineRunner implements CommandLineRunner {
 		log.info("arguments ===>" + Arrays.toString(myArgs));
 		
 		// select workflow 
-		if(args[0].equals(PipelinePDFToXMI.class.getName())){
-			PipelinePDFToXMI.PDFToXMIPipeline(myArgs);
-		}else if(args[0].equals(PipelineLDAInferenceForPDFs.class.getName())){
-			PipelineLDAInferenceForPDFs.LDAInferenceForPDFs(myArgs);
+		
+		if(args[0].equals(PipelineNERInferenceForPDFs.class.getName())){
+			PipelineNERInferenceForPDFs.NERInferenceForPDFs(myArgs);
 		}else{
 			log.info("No valid workflow name/id!!");	
 		}
