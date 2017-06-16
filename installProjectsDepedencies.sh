@@ -11,9 +11,10 @@ cd omtd-remote-execution
 mvn clean install
 
 cd ..
-git clone https://github.com/gkirtzou/uc-tdm-socialsciences.git
+#git clone https://github.com/gkirtzou/uc-tdm-socialsciences.git
+git clone https://github.com/openminted/uc-tdm-socialsciences.git
 cd uc-tdm-socialsciences
-git checkout omtd-demo
+#git checkout omtd-demo
 mvn clean install -Dmaven.test.skip=true
 
 cd ..

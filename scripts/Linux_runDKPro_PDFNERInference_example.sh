@@ -1,2 +1,2 @@
 
-./Linux_runDKPro.sh eu.openminted.simplewokflows.dkpro.PipelineNERInferenceForPDFs $(pwd)"/../testInput2/" $(pwd)"/../testOutput4/"
+java -jar omtd-simple-workflows-sshner-0.0.1-SNAPSHOT-exec.jar eu.openminted.simpleworkflows.sshner.PipelineNERInferenceForPDFs $(pwd)"/../testInput2/" $(pwd)"/../testOutput4/"
