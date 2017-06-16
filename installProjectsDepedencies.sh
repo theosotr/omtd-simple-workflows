@@ -15,6 +15,7 @@ cd ..
 git clone https://github.com/openminted/uc-tdm-socialsciences.git
 cd uc-tdm-socialsciences
 #git checkout omtd-demo
+git checkout 0fc56c50090c2e8821dc692dbe122d3475415146
 mvn clean install -Dmaven.test.skip=true
 
 cd ..
